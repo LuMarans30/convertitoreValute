@@ -53,6 +53,8 @@ export default function ConvertitoreForm() {
                     <TextField
                         label='Source currency amount'
                         error={source.length > 0 && parseInt(source) < 0}
+                        type='number'
+                        inputProps={{ inputMode: 'decimal', pattern: '[0-9.]*' }}
                         value={source}
                         onChange={(e) => setSource(e.target.value)}
                         onKeyPress={(e) => !/[0-9.]/.test(e.key) && e.preventDefault()}
