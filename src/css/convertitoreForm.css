@@ -23,4 +23,5 @@
 #swap-button {
     width: 100%;
     align-self: center;
+    border-radius: 25px;
 }
