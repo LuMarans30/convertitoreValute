@@ -3,12 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "https://ec.europa.eu/budg/inforeuro/api/public/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && netlify deploy --prod"
+    "deploy": "netlify deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
