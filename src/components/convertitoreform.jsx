@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, Typography } from '@mui/material';
 
 import '../css/convertitoreForm.css';
 import CurrencyInput from './currencyinput';
 
 import loadCurrencies from './helpers/sendrequest';
+
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 
 export default function ConvertitoreForm() {
 
@@ -84,8 +86,9 @@ export default function ConvertitoreForm() {
                     size='large'
                     id='swap-button'
                     sx={{ mt: 2 }}
+                    startIcon={<CurrencyExchangeIcon />}
                     onClick={() => swapCurrencies()}>
-                    Swap
+                        <Typography variant='h6'>Swap</Typography>
                 </Button>
             </form>
         </>
