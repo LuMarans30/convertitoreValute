@@ -7,7 +7,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "netlify deploy"
+    "deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
