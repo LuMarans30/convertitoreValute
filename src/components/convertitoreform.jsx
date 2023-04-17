@@ -51,7 +51,7 @@ export default function ConvertitoreForm() {
             <form id='input-form'>
                 <div className='currency-form'>
                     <TextField
-                        label='Source currency amount'
+                        label='Source amount'
                         error={source.length > 0 && parseInt(source) < 0}
                         type='number'
                         inputProps={{ inputMode: 'decimal', pattern: '[0-9.]*' }}
@@ -65,10 +65,8 @@ export default function ConvertitoreForm() {
                         value={sourceCurrency}
                         onChange={(e) => setSourceCurrency(e.target.value)}
                     />
-                </div>
-                <div className='currency-form'>
                     <TextField
-                        label="Target currency amount"
+                        label="Target amount"
                         multiline
                         value={target}
                         maxRows={4}
@@ -84,6 +82,7 @@ export default function ConvertitoreForm() {
                 <Button
                     variant='contained'
                     size='large'
+                    id='swap-button'
                     sx={{ mt: 2 }}
                     onClick={() => swapCurrencies()}>
                     Swap
