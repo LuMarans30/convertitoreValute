@@ -10,7 +10,7 @@ export function App() {
     <>
       <ThemeManager>
         <LoginAppBar />
-        <Card>
+        <Card sx={{borderRadius: 10}}>
           <CardContent>
             <ConvertitoreForm />
           </CardContent>
