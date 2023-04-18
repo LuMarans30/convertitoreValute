@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import preact from '@preact/preset-vite'
-import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,9 +10,8 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
         ws: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
+      }
     }
   },
-  plugins: [preact(), VitePWA()],
+  plugins: [preact()],
 });
