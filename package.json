@@ -15,9 +15,12 @@
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.0",
     "@mui/material-next": "^6.0.0-alpha.81",
+    "@react-oauth/google": "^0.10.0",
+    "dotenv": "^16.0.3",
     "flag-icons": "^6.6.6",
     "netlify-cli": "^14.0.0",
-    "preact": "^10.13.0"
+    "preact": "^10.13.0",
+    "preact-router": "^4.1.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
